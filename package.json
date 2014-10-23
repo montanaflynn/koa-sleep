@@ -1,6 +1,6 @@
 {
   "name": "koa-sleep",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Koa sleep delay middleware",
   "main": "index.js",
   "author": "Montana Flynn",
