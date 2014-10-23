@@ -12,21 +12,16 @@ npm install koa-sleep --save
 
 ```javascript
 var koa = require('koa')
-var app = koa()
-
 var sleep = require('koa-sleep')
+
+var app = koa()
  
 // Sleep for 500ms
 app.use(sleep(500))
 
-// Send the response body
 app.use(function *(next){
-
-  // Obligatory hello world
-  this.body = 'Hello World'
-  
+  this.body = 'Hello World'  
 })
 
-// Listen for incoming requests
 app.listen(1337)
 ```
