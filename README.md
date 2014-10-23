@@ -4,14 +4,7 @@ This koa middleware will "sleep" or delay moving forward for the defined timeout
 
 ## Usage
 
-Require the middleware and add it to your middleware pipeline where you want a delay.
-
-```
-// sleep for 100ms
-app.use(sleep(100))
-```
-
-## Example
+Require the package and add it to your middleware pipeline. Takes an argument in the form of a integer representing milliseconds which defaults to 100 if none is provided.
 
 ```shell
 npm install koa-sleep --save
@@ -23,8 +16,8 @@ var app = koa()
 
 var sleep = require('koa-sleep')
  
-// Sleep for 100ms
-app.use(sleep(100))
+// Sleep for 500ms
+app.use(sleep(500))
 
 // Send the response body
 app.use(function *(next){
